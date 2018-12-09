@@ -1,0 +1,15 @@
+function fact(x){
+    document.write("<br> at top x = ",x)
+    if (x == 1) {
+        y = 1
+        document.write("<br> at base case: x = ",x," y = ",y)
+        return y
+        }
+    else {
+        y = x * fact(x-1)
+        document.write("<br> at recursive case: x = ",x," y = ",y)
+        return y
+        }
+}
+
+fact(4)
